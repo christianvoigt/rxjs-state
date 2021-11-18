@@ -1,5 +1,7 @@
 {
   "name": "rxjs-state",
+  "private": true,
+  "main": "dist/index.js",
   "version": "0.0.1",
   "devDependencies": {
     "ts-node": "^10.4.0",
