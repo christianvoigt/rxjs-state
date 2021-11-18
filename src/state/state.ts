@@ -41,8 +41,6 @@ type ProjectValueReducer<T, K extends keyof T, V> = (
  * const ls = new State<{test: string, bar: number}>();
  */
 export class RxJsState<T extends object> implements Subscribable<any> {
-  private subscription = new Subscription();
-
   private accumulator = createAccumulationObservable<T>();
   private effectObservable = createSideEffectObservable();
 
@@ -56,9 +54,7 @@ export class RxJsState<T extends object> implements Subscribable<any> {
   /**
    * @internal
    */
-  constructor() {
-    this.subscription.add(this.subscribe());
-  }
+  constructor() {}
 
   /**
    * @description
