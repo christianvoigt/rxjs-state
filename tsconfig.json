@@ -11,19 +11,10 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "rxjs-state": [
-        "dist/rxjs-state/rxjs-state",
-        "dist/rxjs-state"
-      ]
+      "rxjs-state": ["dist"]
     }
   },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
-  }
+  "include": ["**/*.ts"]
 }
