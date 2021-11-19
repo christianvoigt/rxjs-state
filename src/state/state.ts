@@ -24,7 +24,7 @@ import {
   createAccumulationObservable,
 } from './accumulation-observable';
 import { createSideEffectObservable } from './side-effect-observable';
-import { safePluck } from 'src/core';
+import { safePluck } from '../core';
 
 type ProjectStateFn<T> = (oldState: T) => Partial<T>;
 type ProjectValueFn<T, K extends keyof T> = (oldState: T) => T[K];
